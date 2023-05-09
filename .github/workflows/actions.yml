@@ -2,14 +2,14 @@ name: Action Workflow
 
 on: 
   push:
-    # branches:
-    #   - master
-    #   - 'feature/*' # matches feature/featA, feature/featB doesn't match feature/feat/a
-    #   - 'feature/**'
-    #   - '!feature/featC'
-    #   - 'develop'
-    branches-ignore:
+    branches:
+      - master
+      - 'feature/*' # matches feature/featA, feature/featB doesn't match feature/feat/a
+      - 'feature/**'
+      - '!feature/featC'
       - 'develop'
+    # branches-ignore:
+    #   - 'develop'
     # tags:
     #   - v1.*
     paths:
