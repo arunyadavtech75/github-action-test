@@ -12,8 +12,8 @@ on:
     #   - 'develop'
     # tags:
     #   - v1.*
-    paths:
-      - "**.js"    
+    # paths:
+    #   - "**.js"    
     # paths-ignore:
     #   - 'docs/**'
   # repository_dispatch:
