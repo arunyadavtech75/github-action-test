@@ -8,10 +8,10 @@ on:
       - 'feature/**'
       - '!feature/featC'
       - 'develop'
-    tags:
-      - v1.*
-    paths:
-     - "**.js"    
+    # tags:
+    #   - v1.*
+    # paths:
+    #  - "**.js"    
     # paths-ignore:
     #   - 'docs/**'
   # repository_dispatch:
