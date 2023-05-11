@@ -8,7 +8,7 @@ jobs:
     timeout-minutes: 240
     steps:
       - name: echo a string
-        run: echo "Hello World"
+        run: eccho "Hello World"
         continue-on-error: true
       - name: multiline script
         run:
