@@ -5,9 +5,11 @@ on: [push, pull_request]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
+    timeout-minutes: 240
     steps:
       - name: echo a string
         run: echo "Hello World"
+        continue-on-error: true
       - name: multiline script
         run:
           node -v
