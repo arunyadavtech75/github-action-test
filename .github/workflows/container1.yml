@@ -10,12 +10,12 @@ jobs:
       - name: log node version
         run: node -v
       - name: Step with docker
-        uses: docker://alialaa17/node-api
+        uses: docker://node:latest
         with:
           entrypoint: "/bin/echo"
           args: "Hello World"
       - name: Log node version
-        uses: docker://alialaa17/node-api
+        uses: docker://node:latest
         with:
           entrypoint: /usr/local/bin/node
           args: -v
