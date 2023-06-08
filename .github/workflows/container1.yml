@@ -5,7 +5,7 @@ jobs:
   docker-steps:
     runs-on: ubuntu-latest
     container:
-      image: alialaa17/node-api
+      image: node:latest
     steps:
       - name: log node version
         run: node -v
