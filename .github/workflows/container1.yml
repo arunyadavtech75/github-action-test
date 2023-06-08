@@ -5,17 +5,17 @@ jobs:
   docker-steps:
     runs-on: ubuntu-latest
     container:
-      image: node:16-alphine
+      image: node:latest
     steps:
       - name: log node version
         run: node -v
       - name: Step with docker
-        uses: docker://node:16-alphine
+        uses: docker://alialaa17/node-api
         with:
           entrypoint: "/bin/echo"
           args: "Hello World"
       - name: Log node version
-        uses: docker://node:16-alphine
+        uses: docker://alialaa17/node-api
         with:
           entrypoint: /usr/local/bin/node
           args: -v
