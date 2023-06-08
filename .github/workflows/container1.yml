@@ -12,8 +12,8 @@ jobs:
       - name: Step with docker
         run: docker://node:node:16-alphine
         with:
-          entrypoint: '/bin/echo'
-          args: 'Hello World'
+          entrypoint: "/bin/echo"
+          args: "Hello World"
       - name: Log node version
         run: docker://node:node:16-alphine
         with:
